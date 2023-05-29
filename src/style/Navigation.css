@@ -1,0 +1,43 @@
+.search {
+  box-shadow: none !important;
+}
+
+.nav-list {
+  height: 3.4rem;
+}
+
+.nav-list-icons ion-icon {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.image-icon img {
+  height: 1.2rem;
+}
+
+.lines div {
+  background-color: #555;
+}
+
+.line-1 {
+  width: 14px;
+  height: 1.5px;
+}
+
+.line-2 {
+  height: 14px;
+  width: 2px;
+}
+
+.right-arrow ion-icon {
+  font-size: 1.2rem;
+}
+
+.box {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+.box-2 {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  background: #fff !important;
+}
