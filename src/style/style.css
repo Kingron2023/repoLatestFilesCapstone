@@ -1,0 +1,58 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title-font {
+  font-family: "Playfair Display", serif !important;
+}
+
+.normal-font {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0rem !important;
+  margin: 0 !important;
+}
+
+li {
+  list-style: none !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.f-xsm {
+  font-size: 12px;
+}
+
+.f-sm {
+  font-size: 14px;
+}
+
+.icon-img img {
+  height: 2rem;
+}
+
+.card {
+  border: none !important;
+  background: none !important;
+  overflow: hidden !important;
+}
+
+span ion-icon {
+  font-size: 1.2rem;
+}
+
+.arrow ion-icon {
+  rotate: -180deg !important;
+  transition: all 0.4s ease;
+}

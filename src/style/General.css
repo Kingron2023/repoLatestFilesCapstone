@@ -1,0 +1,116 @@
+.container-xxl {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  max-width: 1500px;
+}
+
+.sidebar-logo {
+  display: none;
+}
+
+.price-sm {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .menu {
+    display: block !important;
+  }
+
+  .nav-list-menu {
+    display: none;
+  }
+
+  .nav-list {
+    background-color: #fff !important;
+    height: 0rem;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .btn-success {
+    background-color: #53917e !important;
+  }
+
+  .sidebar-link {
+    align-items: start !important;
+  }
+
+  .hide-icons {
+    display: none !important;
+  }
+
+  .border-none {
+    border-right: none !important;
+  }
+
+  .f-sm-modify {
+    font-size: 18px !important;
+  }
+
+  .sidebar-logo {
+    display: block;
+  }
+
+  .display-hide {
+    display: none !important;
+  }
+
+  .signUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .display-none {
+    display: none !important;
+  }
+
+  .search-icon {
+    display: block !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ads {
+    display: none !important;
+  }
+
+  .footer-links-parent {
+    display: grid !important;
+  }
+
+  .footer-links {
+    margin-top: 1rem !important;
+    display: grid !important;
+  }
+
+  .logIn {
+    width: 100% !important;
+  }
+
+  .price-lg {
+    display: none;
+  }
+
+  .price-sm {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-xxl {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .display-none {
+    display: none !important;
+  }
+}

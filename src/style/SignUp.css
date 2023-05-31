@@ -1,0 +1,22 @@
+.label-left {
+  left: 1rem !important;
+}
+
+.input-left {
+  padding-left: 1.8rem !important;
+}
+
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+  box-shadow: none !important;
+}
+
+/* LOGIN */
+.logIn {
+  width: 30rem;
+}
+
+.account-btn::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
