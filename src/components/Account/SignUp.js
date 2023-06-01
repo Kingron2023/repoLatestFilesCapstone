@@ -4,8 +4,9 @@ import signUp from "../../Img/signUp/signUp.svg";
 
 import "../../style/SignUp.css";
 
-import axios from "axios";
-import { useEffect } from "react";
+import { useNavigate } from "react-router";
+
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   const [businessname, setBusinessname] = useState();
@@ -14,6 +15,8 @@ export default function SignUp() {
   const [contactinfo, setContactinfo] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -44,10 +47,12 @@ export default function SignUp() {
     setContactinfo("");
     setEmail("");
     setPassword("");
+
+    navigate("/signIn");
   };
 
   return (
-    <div className="py-5" style={{ height: "100vh" }}>
+    <div className="py-4" style={{ height: "100vh" }}>
       <div className="container-xl">
         <div className="d-flex">
           <a href="/" className="fw-bold title-font fs-4">
@@ -55,7 +60,7 @@ export default function SignUp() {
           </a>
         </div>
 
-        <div className="pb-5" style={{ marginTop: "5rem" }}>
+        <div className="pb-5" style={{ marginTop: "4rem" }}>
           <div className="row gy-3 gx-5 align-items-center">
             <div className="col-12 col-md-12 col-lg-6">
               <div className="">
@@ -67,7 +72,7 @@ export default function SignUp() {
                   Let's level up your brand, together.
                 </p>
 
-                <div className="mt-5">
+                <div className="mt-4">
                   <form onSubmit={handleSubmit}>
                     <div className="row g-3">
                       <div className="col-12 col-md-6">
@@ -210,9 +215,9 @@ export default function SignUp() {
 
                       <p className="mt-3 normal-font text-secondary text-center">
                         Already have an account?{" "}
-                        <a href="./signIn">
+                        <Link to="/signIn">
                           <span className="text-success">Sign in</span>
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </form>

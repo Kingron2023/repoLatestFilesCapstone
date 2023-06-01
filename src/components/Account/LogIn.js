@@ -1,7 +1,11 @@
+import { useState } from "react";
 import logo from "../../Img/Icon/logo.png";
 import signUp from "../../Img/signUp/signUp.svg";
 
 import "../../style/SignUp.css";
+
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function LogIn() {
   return (
@@ -35,6 +39,7 @@ export default function LogIn() {
                               id="LogInemail"
                               placeholder=" "
                               required
+                              name="email"
                             />
                             <label className="label-left" htmlFor="LogInemail">
                               Email
@@ -50,6 +55,7 @@ export default function LogIn() {
                               id="LogInpassword"
                               placeholder=" "
                               required
+                              name="password"
                             />
                             <label
                               className="label-left"
@@ -59,7 +65,6 @@ export default function LogIn() {
                             </label>
                           </div>
                         </div>
-
                         <div className="col-12 mt-4">
                           <input
                             type="submit"
@@ -70,9 +75,9 @@ export default function LogIn() {
 
                         <p className="mt-3 normal-font text-secondary text-center">
                           Already have an account?{" "}
-                          <a href="./signUp">
+                          <Link to="/signUp">
                             <span className="text-success">Sign up</span>
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </form>

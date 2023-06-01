@@ -44,7 +44,7 @@ export default function AccountNav() {
                 <div className="d-flex justify-content-center align-items-center">
                   <div className="btn d-flex py-2 px-4 rounded-5 gap-3 align-items-center box-2 ">
                     <a className=" border-0 d-flex fw-semibold ">
-                      Purchase Products
+                      Add Products
                     </a>
                   </div>
                 </div>
